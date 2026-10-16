@@ -1,0 +1,112 @@
+{
+  "mitigated": false,
+  "portfolio_approval_rate": 0.75,
+  "bias_detected": false,
+  "bias_alerts": [],
+  "disparate_impact": {
+    "owner_gender": 1.0,
+    "region_type": 0.93,
+    "size_band": 0.91,
+    "sector": 0.84
+  },
+  "disparate_impact_ok": true,
+  "by_gender": [
+    {
+      "owner_gender": "Female",
+      "n": 326,
+      "approval_rate": 0.748,
+      "good_borrower_approval": 0.789,
+      "default_rate_approved": 0.037
+    },
+    {
+      "owner_gender": "Male",
+      "n": 1174,
+      "approval_rate": 0.75,
+      "good_borrower_approval": 0.794,
+      "default_rate_approved": 0.053
+    }
+  ],
+  "by_region": [
+    {
+      "region_type": "Metro",
+      "n": 452,
+      "approval_rate": 0.772,
+      "good_borrower_approval": 0.801,
+      "default_rate_approved": 0.066
+    },
+    {
+      "region_type": "Rural",
+      "n": 462,
+      "approval_rate": 0.716,
+      "good_borrower_approval": 0.767,
+      "default_rate_approved": 0.036
+    },
+    {
+      "region_type": "Tier-2",
+      "n": 586,
+      "approval_rate": 0.759,
+      "good_borrower_approval": 0.808,
+      "default_rate_approved": 0.047
+    }
+  ],
+  "by_size": [
+    {
+      "size_band": "Medium",
+      "n": 135,
+      "approval_rate": 0.689,
+      "good_borrower_approval": 0.739,
+      "default_rate_approved": 0.086
+    },
+    {
+      "size_band": "Micro",
+      "n": 921,
+      "approval_rate": 0.76,
+      "good_borrower_approval": 0.801,
+      "default_rate_approved": 0.051
+    },
+    {
+      "size_band": "Small",
+      "n": 444,
+      "approval_rate": 0.748,
+      "good_borrower_approval": 0.792,
+      "default_rate_approved": 0.036
+    }
+  ],
+  "by_sector": [
+    {
+      "sector": "Agri-processing",
+      "n": 174,
+      "approval_rate": 0.764,
+      "good_borrower_approval": 0.822,
+      "default_rate_approved": 0.03
+    },
+    {
+      "sector": "Logistics",
+      "n": 167,
+      "approval_rate": 0.677,
+      "good_borrower_approval": 0.725,
+      "default_rate_approved": 0.018
+    },
+    {
+      "sector": "Manufacturing",
+      "n": 391,
+      "approval_rate": 0.706,
+      "good_borrower_approval": 0.744,
+      "default_rate_approved": 0.062
+    },
+    {
+      "sector": "Retail",
+      "n": 468,
+      "approval_rate": 0.81,
+      "good_borrower_approval": 0.845,
+      "default_rate_approved": 0.066
+    },
+    {
+      "sector": "Services",
+      "n": 300,
+      "approval_rate": 0.747,
+      "good_borrower_approval": 0.797,
+      "default_rate_approved": 0.036
+    }
+  ]
+}

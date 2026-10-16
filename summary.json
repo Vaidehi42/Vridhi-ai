@@ -1,0 +1,20 @@
+{
+  "portfolio_size": 5000,
+  "default_rate_pct": 10.2,
+  "thin_file_share_pct": 39.5,
+  "AUC_traditional": 0.713,
+  "AUC_creditlens": 0.798,
+  "AUC_thin_file_traditional": 0.725,
+  "AUC_thin_file_creditlens": 0.824,
+  "trad_approval_rate": 34.7,
+  "creditlens_approval_rate": 76.8,
+  "bad_rate_among_approved_pct": 5.4,
+  "good_thin_file_approved_trad_pct": 0.0,
+  "good_thin_file_approved_creditlens_pct": 82.0,
+  "forecast_MAPE_pct": 8.2,
+  "seasonal_naive_MAPE_pct": 13.5,
+  "disparate_impact_before": 0.93,
+  "disparate_impact_after": 1.0,
+  "severe_stress_default_rate_pct": 25.299999237060547,
+  "sba_real_data_auc": null
+}

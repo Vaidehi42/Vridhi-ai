@@ -1,0 +1,284 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+  background: #020617;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f8fafc;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+html.dark body {
+  background: #020617;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: 3px solid rgba(13, 148, 136, 0.35);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: #ccfbf1;
+  color: #134e4a;
+}
+
+/* SignIn intentionally stays light on its form card, even when the saved app theme is dark. */
+.dark .signin-page main,
+.dark .signin-page main input,
+.dark .signin-page main textarea,
+.dark .signin-page main select {
+  color-scheme: light;
+}
+
+.dark .signin-page main input:not([type='checkbox']),
+.dark .signin-page main textarea,
+.dark .signin-page main select {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  -webkit-text-fill-color: #0f172a;
+}
+
+.dark .signin-page main input:not([type='checkbox'])::placeholder {
+  color: #94a3b8 !important;
+  -webkit-text-fill-color: #94a3b8;
+}
+
+.dark .signin-page main input[type='checkbox'] {
+  width: 1rem;
+  height: 1rem;
+  background-color: #ffffff !important;
+  accent-color: #0d9488;
+  color-scheme: light;
+}
+
+/* Shared workspace palette. Landing and SignIn deliberately remain outside this scope. */
+.dark .vridhi-app-shell {
+  background-color: #020617;
+  color: #e2e8f0;
+}
+
+.dark .vridhi-app-shell .bg-white,
+.dark .vridhi-app-shell [class*='bg-white/'] {
+  background-color: #0f172a !important;
+}
+
+.dark .vridhi-app-shell .bg-slate-50,
+.dark .vridhi-app-shell .bg-slate-100 {
+  background-color: #111827 !important;
+}
+
+.dark .vridhi-app-shell .bg-slate-200 {
+  background-color: #1e293b !important;
+}
+
+.dark .vridhi-app-shell .bg-teal-50,
+.dark .vridhi-app-shell .bg-emerald-50,
+.dark .vridhi-app-shell .bg-green-50 {
+  background-color: rgba(13, 148, 136, 0.14) !important;
+}
+
+.dark .vridhi-app-shell .bg-blue-50,
+.dark .vridhi-app-shell .bg-indigo-50,
+.dark .vridhi-app-shell .bg-purple-50 {
+  background-color: rgba(30, 64, 175, 0.2) !important;
+}
+
+.dark .vridhi-app-shell .bg-amber-50,
+.dark .vridhi-app-shell .bg-yellow-50 {
+  background-color: rgba(180, 83, 9, 0.2) !important;
+}
+
+.dark .vridhi-app-shell .bg-red-50,
+.dark .vridhi-app-shell .bg-rose-50 {
+  background-color: rgba(153, 27, 27, 0.22) !important;
+}
+
+.dark .vridhi-app-shell .text-slate-900,
+.dark .vridhi-app-shell .text-slate-800,
+.dark .vridhi-app-shell .text-gray-900 {
+  color: #f8fafc !important;
+}
+
+.dark .vridhi-app-shell .text-slate-700,
+.dark .vridhi-app-shell .text-slate-600,
+.dark .vridhi-app-shell .text-gray-700,
+.dark .vridhi-app-shell .text-gray-600 {
+  color: #cbd5e1 !important;
+}
+
+.dark .vridhi-app-shell .text-slate-500,
+.dark .vridhi-app-shell .text-gray-500,
+.dark .vridhi-app-shell .text-slate-400,
+.dark .vridhi-app-shell .text-gray-400 {
+  color: #94a3b8 !important;
+}
+
+.dark .vridhi-app-shell .text-slate-300,
+.dark .vridhi-app-shell .text-gray-300 {
+  color: #cbd5e1 !important;
+}
+
+.dark .vridhi-app-shell .text-teal-900,
+.dark .vridhi-app-shell .text-teal-800,
+.dark .vridhi-app-shell .text-teal-700,
+.dark .vridhi-app-shell .text-emerald-900,
+.dark .vridhi-app-shell .text-green-900 {
+  color: #99f6e4 !important;
+}
+
+.dark .vridhi-app-shell .text-amber-900,
+.dark .vridhi-app-shell .text-yellow-900 {
+  color: #fde68a !important;
+}
+
+.dark .vridhi-app-shell .text-red-900,
+.dark .vridhi-app-shell .text-rose-900 {
+  color: #fecaca !important;
+}
+
+.dark .vridhi-app-shell .border-slate-100,
+.dark .vridhi-app-shell .border-slate-200,
+.dark .vridhi-app-shell .border-gray-200,
+.dark .vridhi-app-shell .border-gray-300 {
+  border-color: #334155 !important;
+}
+
+.dark .vridhi-app-shell .border-slate-300,
+.dark .vridhi-app-shell .border-gray-400 {
+  border-color: #475569 !important;
+}
+
+.dark .vridhi-app-shell input,
+.dark .vridhi-app-shell select,
+.dark .vridhi-app-shell textarea {
+  color: #e2e8f0;
+  background-color: #0f172a;
+  border-color: #475569;
+}
+
+.dark .vridhi-app-shell input::placeholder,
+.dark .vridhi-app-shell textarea::placeholder {
+  color: #64748b;
+}
+
+.dark .vridhi-app-shell option {
+  color: #e2e8f0;
+  background-color: #0f172a;
+}
+
+.dark .vridhi-app-shell table thead,
+.dark .vridhi-app-shell th {
+  color: #cbd5e1;
+  background-color: #111827;
+}
+
+.dark .vridhi-app-shell tbody tr {
+  border-color: #334155;
+}
+
+.dark .vridhi-app-shell tbody tr:hover {
+  background-color: rgba(30, 41, 59, 0.72);
+}
+
+.dark .vridhi-app-shell .divide-slate-200 > :not([hidden]) ~ :not([hidden]) {
+  border-color: #334155;
+}
+
+.dark .vridhi-app-shell .shadow,
+.dark .vridhi-app-shell .shadow-sm,
+.dark .vridhi-app-shell .shadow-md,
+.dark .vridhi-app-shell .shadow-lg,
+.dark .vridhi-app-shell .shadow-xl {
+  --tw-shadow-color: rgba(0, 0, 0, 0.45);
+}
+
+/* Recharts: keep axes, grids, tooltips and legends legible in the dark workspace. */
+.dark .vridhi-app-shell .recharts-cartesian-axis-tick-value,
+.dark .vridhi-app-shell .recharts-label,
+.dark .vridhi-app-shell .recharts-legend-item-text {
+  fill: #cbd5e1 !important;
+  color: #cbd5e1 !important;
+}
+
+.dark .vridhi-app-shell .recharts-cartesian-grid-horizontal line,
+.dark .vridhi-app-shell .recharts-cartesian-grid-vertical line {
+  stroke: #334155 !important;
+  opacity: 0.9;
+}
+
+.dark .vridhi-app-shell .recharts-default-tooltip,
+.dark .vridhi-app-shell .recharts-tooltip-wrapper {
+  color: #e2e8f0 !important;
+}
+
+.dark .vridhi-app-shell .recharts-default-tooltip {
+  background-color: #0f172a !important;
+  border: 1px solid #475569 !important;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4) !important;
+}
+
+.dark .vridhi-app-shell .recharts-tooltip-item,
+.dark .vridhi-app-shell .recharts-tooltip-label {
+  color: #e2e8f0 !important;
+}
+
+.dark .vridhi-app-shell .recharts-tooltip-item-list {
+  color: #cbd5e1 !important;
+}
+
+/* Preserve the semantic risk palette in either theme. */
+.dark .vridhi-app-shell .text-risk-healthy,
+.dark .vridhi-app-shell .text-green-600,
+.dark .vridhi-app-shell .text-green-700 {
+  color: #4ade80 !important;
+}
+
+.dark .vridhi-app-shell .text-risk-watch,
+.dark .vridhi-app-shell .text-yellow-600,
+.dark .vridhi-app-shell .text-amber-600 {
+  color: #fbbf24 !important;
+}
+
+.dark .vridhi-app-shell .text-risk-stressed,
+.dark .vridhi-app-shell .text-orange-600 {
+  color: #fb923c !important;
+}
+
+.dark .vridhi-app-shell .text-risk-high,
+.dark .vridhi-app-shell .text-red-600,
+.dark .vridhi-app-shell .text-red-700 {
+  color: #f87171 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

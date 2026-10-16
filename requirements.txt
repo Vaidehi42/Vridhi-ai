@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-multipart
+pandas
+numpy
+scikit-learn
+# Compatible with the exported model in this package; pin a known major range.
+xgboost>=2.0,<3.0
+joblib
+pyarrow

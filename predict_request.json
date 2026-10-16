@@ -1,0 +1,18 @@
+{
+  "msme_id": "M03783",
+  "sector": "Retail",
+  "business_age": 6.1,
+  "annual_turnover_lakh": 47.6,
+  "upi_inflow_monthly_lakh": 1.64,
+  "gst_on_time_pct": 0.6916,
+  "upi_volatility": 0.3945,
+  "utility_delay_days": 9.8058,
+  "receivable_days": 47.1663,
+  "customer_concentration": 0.2443,
+  "bounced_payments": 0,
+  "turnover_growth": 0.0712,
+  "existing_debt_lakh": 28.2,
+  "loan_amount_lakh": 16.1,
+  "interest_rate": 0.1232,
+  "bureau_score": null
+}
